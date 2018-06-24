@@ -15,8 +15,6 @@ class Player {
   }
 
   playPause (song = this.currentlyPlaying) {
-    console.log("calling playpause with " + song.title);
-    console.log("currently playing " + this.currentlyPlaying.title);
     if (this.currentlyPlaying !== song) {
       // Stop the currently playing sound file (even if nothing is playing)
       this.soundObject.stop();
