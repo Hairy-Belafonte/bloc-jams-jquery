@@ -1,5 +1,5 @@
 class Helper {
-  playPauseAndUpdate(song){
+  playPauseAndUpdate(song = player.currentlyPlaying){
     player.playPause(song);
     $('button#play-pause').attr('playState',player.playState);
     if(!song) {return;}
