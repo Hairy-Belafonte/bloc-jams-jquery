@@ -15,7 +15,6 @@
   });
 
 
-
   $('button#previous').on('click', function() {
     if (player.playState !== 'playing') {return; }
     if(player.getTime() > 2){
